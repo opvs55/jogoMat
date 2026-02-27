@@ -1,0 +1,125 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #132242 0%, #070c16 60%);
+  color: #e8edf7;
+}
+
+.layout {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  color: #bdc8e0;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.8fr;
+  gap: 16px;
+}
+
+.card {
+  background: #0f1829;
+  border: 1px solid #27344e;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+button {
+  background: #1f3d76;
+  color: #f3f7ff;
+  border: 1px solid #3a5f9e;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.sim {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 12px;
+  border: 1px solid #2a3a58;
+}
+
+.status-row {
+  min-height: 26px;
+}
+
+.ok { color: #87fdb3; }
+.bad { color: #ff9a9a; }
+
+label {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 8px;
+  color: #d7e1f3;
+}
+
+.grid-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+input[type='range'] {
+  width: 100%;
+}
+
+.formula-box {
+  background: #081121;
+  border: 1px dashed #30496f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.telemetry ul {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+
+.hint {
+  color: #b7c7e6;
+}
+
+@media (max-width: 1020px) {
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
